@@ -130,29 +130,29 @@ E--Commerce-JAVA
 ### **LoginController.java**  
 Handles tasks like:  
 1. **User Authentication:** Validates login credentials for customers, vendors, and admin.  
-   - `authenticateUser(HttpServletRequest request, HttpServletResponse response)`  
+ 
 2. **Redirect to Role-based Dashboard:** Redirects users to appropriate dashboards based on role.  
-   - `redirectToDashboard(HttpServletRequest request, HttpServletResponse response)`  
+
 
 ---
 
 ### **ProductController.java**  
 Handles tasks like:  
 1. **Product Display:** Displays a list of products based on search filters or categories.  
-   - `displayProducts(HttpServletRequest request, HttpServletResponse response)`  
+ 
 2. **Add to Cart:** Manages adding products to the shopping cart.  
-   - `addToCart(HttpServletRequest request, HttpServletResponse response)`  
+
 3. **Product Checkout:** Manages the checkout process for customers.  
-   - `checkout(HttpServletRequest request, HttpServletResponse response)`  
+ 
 
 ---
 
 ### **AdminController.java**  
 Handles admin functionality:  
 1. **Approve/Reject Users:** Admin can approve or reject new customer/vendor registrations.  
-   - `approveOrRejectUser(HttpServletRequest request, HttpServletResponse response)`  
+
 2. **Manage Orders:** Admin can view and manage orders placed by customers.  
-   - `manageOrders(HttpServletRequest request, HttpServletResponse response)`  
+    
 
 ---
 
