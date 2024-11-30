@@ -1,0 +1,118 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #sidebar {
+            width: 100%;
+            background-color: #f1f1f1;
+            height: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #content {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .menu-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background-color: #ddd;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .button {
+            margin-left: 12% !important;
+            padding: 4px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        form {
+            margin-bottom: 20px;
+            display: grid;
+            max-width: 100% !important;
+            padding-left: 6%;
+        }
+
+        input, select, textarea, button {
+            margin-bottom: 10px;
+            padding: 5px;
+            max-width: 50%;
+            margin-left: 11%;
+        }
+
+        /* For larger screens */
+        @media (min-width: 1024px) {
+            #container2 {
+                flex-direction: row;
+            }
+
+            #sidebar {
+                width: 200px;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            #content {
+                flex-grow: 1;
+                padding: 20px;
+            }
+        }
+
+        /* Existing CSS */
+
+@media (min-width: 1024px) {
+    #profile form {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 1023px) {
+    #profile form {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

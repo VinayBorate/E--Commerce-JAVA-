@@ -1,0 +1,336 @@
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+
+
+.btn-square,
+.btn-md-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.btn-primary {
+    color: #000;
+    background-color: #f9f9f9;
+    border-color: #0c0c0b;
+}
+
+
+/*** Navbar Start ***/
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #dce8f5;
+}
+
+/*** Navbar End ***/
+
+
+
+/*** FOOTER START ***/
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.card-img-top {
+    height: 268px ;
+    object-fit: cover;
+    /* Ensures the image covers the card area */
+}
+
+.footer {
+    background-color: rgb(64 125 215 / 10%);
+    /* Footer background color */
+    padding: 40px 20px;
+ 
+    text-align: center;
+    border-top: 0px solid #96afc9;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+  
+}
+
+.footer p {
+    margin: 0;
+    
+}
+
+
+/*FONT AWSOME ICON */
+.fa-icon-colour , .danger-colour{
+
+  color: #0aad41;  
+}
+
+.fa-icon-colour:hover{
+     color: #d7ce1c; 
+    transition: color 0.5s;
+
+}
+
+.danger-colour:hover{
+	
+	 color: #ff0000; 
+    transition: color 0.5s;
+	
+}
+
+.search-hover:hover{
+   background: #d7ce1c;
+}
+
+
+
+/* MIDDLE CONTENT */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fcfafa5c;;
+  color: #333;
+}
+
+/* Container Layout */
+.container2 {
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  padding: 15px 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.sidebar ul li:hover {
+  background-color: #e9f6e9;
+}
+
+.sidebar ul li.active {
+  background-color: #e9f6e9;
+  font-weight: bold;
+}
+
+.sidebar ul li.active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #28a745;
+}
+
+/* Product Grid Styling */
+/* Product Grid Styling */
+.product-grid {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Sort Section Styling */
+.sort-section {
+  display: flex;
+  flex-direction: column; /* Stack vertically for small screens */
+  gap: 10px; /* Space between elements */
+}
+
+@media (min-width: 600px) {
+  .sort-section {
+    flex-direction: row; /* Align horizontally for bigger screens */
+    justify-content: space-between; /* Space out items */
+  }
+  
+  .sort-section label {
+    margin-right: 10px; /* Add space between label and select */
+  }
+}
+
+@media (min-width: 900px) {
+  .sort-section {
+    justify-content: right; /* Align items to the start */
+    gap: 20px; /* Increase gap for larger screens */
+  }
+}
+.sort-section select {
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#category-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+
+/* 
+cARD GRID TO DISPLAY UMBER OF CARED ON SCREEN */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 columns by default */
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 column on extra small screens */
+  }
+}
+
+/*
+*/
+
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.vendor-name {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5959;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.price strong {
+  font-size: 18px;
+  color: #28a745;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+

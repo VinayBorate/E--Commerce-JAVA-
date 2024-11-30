@@ -1,0 +1,42 @@
+   body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .container3 {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        h1, h2 {
+            color: #28a745;
+        }
+        .order-details {
+            background-color: #f1f8e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .table {
+            background-color: white;
+        }
+        .estimated-delivery {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #28a745;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container3 {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+        }
