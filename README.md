@@ -63,7 +63,10 @@ E--Commerce-JAVA
 
 ---
 
-## **Project Images**
+## **Project Images**  
+
+- **Store Home Page**  
+  <img src="Images/Store_HomePage.png" alt="Store Home Page">
 
 - **Admin Dashboard**  
   <img src="Images/AdminDashBoard.png" alt="Admin Dashboard">
@@ -88,9 +91,6 @@ E--Commerce-JAVA
 
 - **Register User**  
   <img src="Images/RegisterUser.png" alt="Register User">
-
-- **Store Home Page**  
-  <img src="Images/Store_HomePage.png" alt="Store Home Page">
 
 - **Vendor Dashboard**  
   <img src="Images/Vendor_DashBoard.png" alt="Vendor Dashboard">
